@@ -1,0 +1,27 @@
+<div class = "row">
+    <h2> Lista de ação Judicial</h2>
+</div>
+
+<table class = "table-striped">
+    <thead>
+        <tr>
+            <th> CPF/CNPJ </th>
+            <th> Nome </th>
+            <th> Status</th>
+            <th> Ações </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let acaoJudicial of acoesJudiciais" >
+            <td> {{ acaoJudicial.cpf_cnpj }} </td>
+            <td> {{ acaoJudicial.nome }} </td>
+            <td> {{ acaoJudicial.status_id }} </td>
+            <td>
+                <button (click) = "atualizaAcaoJudicial(acaoJudicial.cpf_cnpj)" class = "btn btn-primary"> Atualizar</button>
+                <button (click) = "deletaAcaoJudicial(acaoJudicial.cpf_cnpj)" class = "btn btn-danger" style="margin-left: 10px"> Deletar</button>
+                <button (click) = "obtemAcaoJudicialPorDocumento(acaoJudicial.cpf_cnpj)" class = "btn btn-primary" style="margin-left: 10px"> Visualizar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

@@ -1,0 +1,39 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+.nav{
+    background-color: #6A1B9A;
+    box-shadow: 1px 1px 4px #000000;
+}
+
+.spam{
+  color: #ffffff;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+.card-body {
+    color: #6A1B9A;
+}
+
+.card-body:hover{
+    color: #9C27B0;
+}
+
+.btn{
+    color: #6A1B9A;
+}
+
+#acao{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.menu-header{
+    margin-bottom: 15 px;
+    padding: 10px;
+}

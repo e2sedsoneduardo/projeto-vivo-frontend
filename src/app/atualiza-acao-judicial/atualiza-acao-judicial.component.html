@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center"> Atualiza Ação Judicial </h3>
+            <hr />
+            <div class="card-body">
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label> Nome</label>
+                        <input type="text" class="form-control" id="nome" [(ngModel)]="acaoJudicial.nome"
+                            name="nome">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Status Pessoa</label>
+                        <select #status (change)="onSelected()" class="form-control">
+                          <option selected>{{acaoJudicial.descricao}}</option>
+                          <option *ngFor="let statusPessoa of listaStatusPessoa" [value]="statusPessoa.status_id">{{statusPessoa.descricao}}</option>
+                        </select>
+                    </div>
+                    <br />
+                    <button class="btn btn-success" type="submit">Atualizar</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

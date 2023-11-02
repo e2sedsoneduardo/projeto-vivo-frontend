@@ -1,0 +1,15 @@
+table.table-striped {
+    border-collapse: collapse; /* CSS2 */
+    background: #f3e5f5;
+}
+ 
+table.table-striped td {
+    border: 1px solid black;
+    padding: 10px;
+}
+ 
+table.table-striped th {
+    border: 1px solid black;
+    background: #e1bee7;
+    padding: 10px;
+}
