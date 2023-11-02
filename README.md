@@ -6,6 +6,10 @@ Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli
 
 Rodar o comando `ng serve` para ter o servidor de desenvolvimento. Navegue para o endereço `http://localhost:4200/`. A aplicação irá automaticamente recerregar se vou alterar qualquer um dos arquivos de origem.
 
+## Gerando o artefato e baixando as dependencias
+
+Rodar o comando npm install --force para baixar as dependências presentes no projeto e gerar o artefato.
+
 ## Geração de Componentes
 
 Rodar o comando `ng generate component component-name` para gerar um novo componente. Você também pode usar o comando `ng generate directive|pipe|service|class|guard|interface|enum|module`.
@@ -13,6 +17,10 @@ Rodar o comando `ng generate component component-name` para gerar um novo compon
 ## Construção
 
 Rodar o comando para gerar o artefato do projeto: `ng build`. O artefato de construção será armazenado no diretório `dist/`.
+
+## Subindo o servidor na máquina de desenvolvimento
+
+Rodar o comando npm start para subir o servidor na máquina local e acessar a aplicação via link http://localhost:4200/
 
 ## Rodando testes unitários
 
